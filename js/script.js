@@ -1,6 +1,6 @@
 let resultdisplay = ''
 let result = document.getElementById('resultdisplay')
-let buttons = document.querySelectorAll('.buttons')
+const buttons = document.querySelectorAll('.buttons')
 
 buttons.forEach(btn => btn.addEventListener('click', function(button) {
     display(button.target.innerText)
@@ -92,5 +92,29 @@ document.addEventListener('keydown', function(event) {
         display('DEL')
     } else if (key == '=' || key == 'Enter') {
         display('=')
+    }
+})
+
+
+const body = document.body
+const container = document.querySelector('.container')
+const theme = document.getElementById('theme')
+theme.addEventListener('click', function() {
+    if (theme.checked) {
+        body.style.backgroundColor = '#F8F0E5'
+        container.style.backgroundColor = '#EADBC8'
+        result.style.backgroundColor = '#DAC0A3'
+        buttons.forEach(button => {
+            button.style.backgroundColor = '#DAC0A3'
+        })
+    }
+    else {
+        body.style.backgroundColor = '#352F44'
+        container.style.backgroundColor = '#5C5470'
+        result.style.backgroundColor = '#B9B4C7'
+        buttons.forEach(button => {
+            button.style.backgroundColor = '#B9B4C7'
+        })
+
     }
 })

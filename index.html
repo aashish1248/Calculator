@@ -11,6 +11,7 @@
         <meta name="copyright" content="Copyright 2023"/> 
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
         <meta property="og:title" content="Calculator"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://calculator.aashishchapagai.info.np/"/>
@@ -29,7 +30,10 @@
             padding: 0;
           }
           header {
-            margin: 10px;
+            line-height: 1;
+            position: fixed;
+            top: 10px;
+            left: 10px;
             color: blue;
           }
           body {
@@ -43,6 +47,7 @@
             grid-template-columns: auto auto auto auto;
             gap: 20px;
             align-items: stretch;
+            justify-content: stretch;
             text-align: center;
           }
           #calculator > div {
@@ -138,6 +143,11 @@
           .switch input:not(:checked) ~ .label-off {
             opacity: 1;
           }
+          @media (max-width: 768px) {
+            body {
+              font-size: 15px;
+            }
+          }
         </style>
     </head>
     <body>
@@ -145,17 +155,17 @@
         Calculator
       </header>
       <nav>
-        <div style="width: 100%; margin-top: 12px;">
+        <div style="width: 100%; ">
           <label class="switch">
-            <input type="checkbox" checked>
+            <input id="theme" type="checkbox" checked>
             <span class="slider round"></span>
             <span class="label label-on">Light</span>
             <span class="label label-off">Dark</span>
           </label>
         </div>
       </nav>
-      <main style="margin-top: 40px;">
-        <div class="container" style="background-color: #EADBC8; padding: 50px; border-radius: 10px; max-width: 600px;">
+      <main style="margin-top: 90px;">
+        <div class="container" style="background-color: #EADBC8; padding: 40px; border-radius: 10px; max-width: 600px;">
           <div class="row">
             <div id="calculator" class="col-12 col-lg-12">
               <div id="resultdisplay">0</div>
@@ -181,6 +191,7 @@
           </div>
         </div>
       </main>
+      <footer style="font-size: 12px; text-align: center; margin-top: 7px;">Project By Aashish Chapagai</footer>
       <script src="./js/script.js"></script>
     </body>
 </html>
