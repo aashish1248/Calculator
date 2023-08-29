@@ -29,7 +29,7 @@
             margin: 0;
             padding: 0;
           }
-          header {
+          header > h1 {
             line-height: 1;
             position: fixed;
             top: 10px;
@@ -66,13 +66,13 @@
           nav {
             position: fixed;
             top: 10px;
-            width: 100px;
+            width: 80px;
             right: 10px;
           }
           .switch {
             position: relative;
             display: inline-block;
-            width: 100px;
+            width: 80px;
             height: 34px;
           }
           .switch input {
@@ -109,9 +109,9 @@
             box-shadow: 0 0 1px #2196F3;
           }
           input:checked + .slider:before {
-            -webkit-transform: translateX(66px);
-            -ms-transform: translateX(66px);
-            transform: translateX(66px);
+            -webkit-transform: translateX(46px);
+            -ms-transform: translateX(46px);
+            transform: translateX(46px);
           }
           .slider.round {
             border-radius: 34px;
@@ -148,14 +148,30 @@
               font-size: 15px;
             }
           }
+          nav > div {
+            width: 100%;
+          }
+          main {
+            margin-top: 90px;
+          }
+          .container {
+            background-color: #EADBC8;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 90%;
+          }
+          footer {
+            font-size: 12px; text-align: center; margin-top: 7px;
+          }
         </style>
     </head>
     <body>
       <header>
-        Calculator
+        <h1>Calculator</h1>
       </header>
       <nav>
-        <div style="width: 100%; ">
+        <div>
           <label class="switch">
             <input id="theme" type="checkbox" checked>
             <span class="slider round"></span>
@@ -164,8 +180,8 @@
           </label>
         </div>
       </nav>
-      <main style="margin-top: 90px;">
-        <div class="container" style="background-color: #EADBC8; padding: 40px; border-radius: 10px; max-width: 600px;">
+      <main>
+        <div class="container">
           <div class="row">
             <div id="calculator" class="col-12 col-lg-12">
               <div id="resultdisplay">0</div>
@@ -191,7 +207,7 @@
           </div>
         </div>
       </main>
-      <footer style="font-size: 12px; text-align: center; margin-top: 7px;">Project By Aashish Chapagai</footer>
+      <footer>Project By Aashish Chapagai</footer>
       <script src="./js/script.js"></script>
     </body>
 </html>
