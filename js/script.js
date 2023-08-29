@@ -99,11 +99,15 @@ document.addEventListener('keydown', function(event) {
 const body = document.body
 const container = document.querySelector('.container')
 const theme = document.getElementById('theme')
+const footer = document.querySelector('footer')
+const header = document.querySelector('h1')
 theme.addEventListener('click', function() {
     if (theme.checked) {
         body.style.backgroundColor = '#F8F0E5'
         container.style.backgroundColor = '#EADBC8'
         result.style.backgroundColor = '#DAC0A3'
+        footer.style.color = '#000000'
+        header.style.color = '#000000'
         buttons.forEach(button => {
             button.style.backgroundColor = '#DAC0A3'
         })
@@ -112,9 +116,10 @@ theme.addEventListener('click', function() {
         body.style.backgroundColor = '#352F44'
         container.style.backgroundColor = '#5C5470'
         result.style.backgroundColor = '#B9B4C7'
+        footer.style.color = '#FAF0E6'
+        header.style.color = '#FAF0E6'
         buttons.forEach(button => {
             button.style.backgroundColor = '#B9B4C7'
         })
-
     }
 })
