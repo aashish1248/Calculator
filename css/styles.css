@@ -24,7 +24,7 @@ body {
     align-items: stretch;
     justify-content: stretch;
     text-align: center;
-    min-height: 70vh;
+    min-height: 65vh;
 }
 #resultdisplay ~ div, #resultdisplay {
     position: relative;
@@ -34,6 +34,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 15px 1px #A08B72;
     height: 100%;
 }
 #calculator p {
@@ -41,6 +42,18 @@ body {
 }
 #reset, #result {
     grid-column: span 2;
+}
+#reset[id] {
+    background-color: #8D7B68;
+}
+#result[id] {
+    background-color: #93BFCF;
+}
+#del[id] {
+    background-color: #B1A192;
+}
+#resultdisplay[id] {
+    background-color: #FAF1E4;
 }
 #resultdisplay {
     grid-column: span 4;
@@ -157,9 +170,10 @@ main {
     border-radius: 10px;
     max-width: 600px;
     width: 90%;
+    box-shadow: 10px 10px 15px 5px #8A8073;
 }
 footer {
     font-size: 12px;
     text-align: center;
-    margin-top: 7px;
+    margin-top: 25px;
 }
