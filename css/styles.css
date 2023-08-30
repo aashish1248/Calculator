@@ -24,7 +24,7 @@ body {
     align-items: stretch;
     justify-content: stretch;
     text-align: center;
-    min-height: 65vh;
+    min-height: 60vh;
 }
 #resultdisplay ~ div, #resultdisplay {
     position: relative;
