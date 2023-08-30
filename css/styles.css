@@ -7,7 +7,7 @@ header {
 }
 header > h1 {
     line-height: 1;
-    position: fixed;
+    position: absolute;
     top: 20px;
     width: 100%;
 }
@@ -54,7 +54,7 @@ body {
     margin: 0;
 }
 nav {
-    position: fixed;
+    position: absolute;
     top: 20px;
     width: 70px;
     right: 10px;
