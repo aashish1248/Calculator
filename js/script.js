@@ -101,6 +101,10 @@ const container = document.querySelector('.container')
 const theme = document.getElementById('theme')
 const footer = document.querySelector('footer')
 const header = document.querySelector('h1')
+const del = document.getElementById('del')
+const reset = document.getElementById('reset')
+const equals = document.getElementById('result')
+const answer = document.getElementById('resultdisplay')
 theme.addEventListener('click', function() {
     if (theme.checked) {
         body.style.backgroundColor = '#F8F0E5'
@@ -111,6 +115,10 @@ theme.addEventListener('click', function() {
         buttons.forEach(button => {
             button.style.backgroundColor = '#DAC0A3'
         })
+        del.style.backgroundColor = '#B1A192'
+        reset.style.backgroundColor = '#8D7B68'
+        equals.style.backgroundColor = '#93BFCF'
+        answer.style.backgroundColor = '#FAF1E4'
     }
     else {
         body.style.backgroundColor = '#352F44'
