@@ -170,10 +170,10 @@ main {
     border-radius: 10px;
     max-width: 600px;
     width: 90%;
-    box-shadow: 10px 10px 15px 5px #8A8073;
+    box-shadow: 10px 5px 15px 5px #8A8073;
 }
 footer {
     font-size: 12px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
